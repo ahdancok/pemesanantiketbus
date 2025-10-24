@@ -1,0 +1,122 @@
+/* 🌈 Gaya Umum */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #00bcd4, #2196f3);
+  min-height: 100vh;
+  padding: 20px;
+  color: #333;
+}
+
+/* 🌟 Header */
+header {
+  background: white;
+  padding: 15px 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+header h2 {
+  color: #0288d1;
+  font-size: 22px;
+}
+
+header nav a {
+  color: #0288d1;
+  text-decoration: none;
+  font-weight: 600;
+  margin: 0 5px;
+  transition: 0.2s;
+}
+
+header nav a:hover {
+  color: #01579b;
+  border-bottom: 2px solid #0288d1;
+  padding-bottom: 2px;
+}
+
+/* 📋 Judul Daftar */
+h3 {
+  color: white;
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 20px;
+  letter-spacing: 0.5px;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.2);
+}
+
+/* 🧾 Tabel Bus */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+}
+
+th, td {
+  padding: 12px 10px;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+}
+
+th {
+  background-color: #0288d1;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+tr:nth-child(even) {
+  background-color: #f4f9ff;
+}
+
+tr:hover {
+  background-color: #e3f2fd;
+  transition: 0.2s;
+}
+
+/* 💚 Tombol "Pesan Sekarang" */
+table a {
+  display: inline-block;
+  background: #4caf50;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+table a:hover {
+  background: #43a047;
+  transform: scale(1.05);
+}
+
+/* 📱 Responsif */
+@media (max-width: 768px) {
+  table, th, td {
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  header {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+
+  header h2 {
+    font-size: 18px;
+  }
+}
